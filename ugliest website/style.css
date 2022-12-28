@@ -1,0 +1,84 @@
+header{
+    font-size: 300px;
+    font-family: fantasy;
+    text-align: center;
+    padding: 100px;
+    color: saddlebrown;
+    text-decoration: overline;
+    outline: slateblue;
+}
+#red {
+    display: grid;
+    grid-area: body;
+    color:violet;
+    padding-left: 20px;
+    font-size: 40px;
+}
+#blue{
+    display:grid;
+    grid-area: body;
+    color: tomato;
+}
+#fall {
+    display: flex;
+    grid-area:sidebar;
+    align-items:flex-start;
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr,;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    grid-template-areas: 
+    "head    head   head"
+    "sidebar   body     body"
+    "foot   foot2 foot3";
+    background-image: url("/resources/morecats.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    background-size:contain;
+}
+
+p{
+    font-size: 30px;
+}
+h1{
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-decoration: underline;
+    grid-area: 1;
+    
+}
+h2{
+    font-size: 50px;
+    color:yellow;
+    font-weight: bold;
+    text-decoration:wavy;
+    grid-area: head;
+    margin: 300px;
+    padding: 100px;
+}
+h3{
+    font-size: 30px;
+    color: red;
+    font-weight: bold;
+    text-decoration:dashed;
+    grid-area:foot;
+    margin: 50px;
+    padding 500px;
+}
+img{
+    grid-area: sidebar;
+    border-radius: 30%;
+    align-items: center;
+   max-width: 50%;
+   border: yellowgreen;
+   border-color: yellowgreen;
+   border-width: 20px;
+   
+}
+ul{
+    grid-area: 1;
+    color: turquoise;
+    font-size: 60px;
+}
